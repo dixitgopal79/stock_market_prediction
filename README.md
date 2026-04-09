@@ -1,92 +1,105 @@
 # 📈 Stock Market Prediction using Machine Learning
 
-## 📌 Project Overview
-This project predicts stock market prices using Machine Learning algorithms like:
-- Random Forest
-- Decision Tree
-- K-Nearest Neighbors (KNN)
-
-The goal is to compare different models and evaluate their performance using metrics like R2 Score, MAE, and RMSE.
+This project focuses on predicting stock prices using Machine Learning algorithms. The dataset is fetched using Yahoo Finance API and models are trained to predict stock closing prices.
 
 ---
 
-## 📂 Dataset
-- Stock market dataset (CSV file)
-- Features include:
-  - Open
-  - High
-  - Low
-  - Volume
-- Target:
-  - Close price
+## 📊 Dataset
+
+- Source: Yahoo Finance (yfinance)
+- Stock: RELIANCE.NS
+- Time Period: 2020 – 2024
+- Total Records: 992 rows :contentReference[oaicite:0]{index=0}  
+
+### Features Used:
+- Open
+- High
+- Low
+- Volume
+
+### Target:
+- Close Price
 
 ---
 
 ## ⚙️ Technologies Used
+
 - Python
 - Pandas
 - NumPy
 - Matplotlib
 - Seaborn
 - Scikit-learn
+- yfinance
 
 ---
 
-## 🚀 Steps Involved
+## 🧠 Machine Learning Algorithms
 
-1. Data Loading  
-2. Data Preprocessing  
-3. Train-Test Split  
-4. Feature Scaling (MinMax / StandardScaler)  
-5. Model Training  
-6. Prediction  
-7. Evaluation  
-8. Visualization  
+The following models are used:
 
----
+### 1. Random Forest Regressor
+- Accuracy: **99.98%**
+- Best performing model
 
-## 🤖 Models Used
+### 2. Decision Tree Regressor
+- Accuracy: **99.93%**
 
-### 1. Random Forest
-- Ensemble learning method
-- High accuracy
-
-### 2. Decision Tree
-- Simple and easy to interpret
-
-### 3. KNN (K-Nearest Neighbors)
-- Distance-based algorithm
-- Sensitive to scaling
+### 3. K-Nearest Neighbors (KNN)
+- Accuracy: **99.95%**
 
 ---
 
-## 📊 Evaluation Metrics
+## 📉 Evaluation Metrics
 
-- R2 Score
 - Mean Absolute Error (MAE)
 - Mean Squared Error (MSE)
-- RMSE
+- Root Mean Squared Error (RMSE)
+- R² Score
 
 ---
 
-## 📉 Results
+## 📊 Visualization
 
-| Model            | R2 Score |
-|------------------|---------|
-| Random Forest    | Best    |
-| Decision Tree    | Medium  |
-| KNN              | Low     |
-
----
-
-## 📈 Visualization
-- Bar Graph for model comparison
-- Actual vs Predicted graph
+- Close Price History Graph
+- Actual vs Predicted Graph
+- Scatter Plot (Decision Tree)
+- Accuracy Comparison Bar Graph
 
 ---
 
-## ▶️ How to Run
+## 📌 Project Workflow
 
-1. Clone repository:
-```bash
-git clone https://github.com/your-username/stock_market_prediction.git
+1. Data Collection using yfinance  
+2. Data Preprocessing & Cleaning  
+3. Feature Selection  
+4. Train-Test Split  
+5. Feature Scaling (MinMaxScaler)  
+6. Model Training  
+7. Prediction  
+8. Evaluation  
+9. Visualization  
+
+---
+
+## 📈 Results
+
+Random Forest performed best with highest accuracy, followed by KNN and Decision Tree.
+
+---
+
+## 🚀 Conclusion
+
+Machine Learning models can effectively predict stock prices with high accuracy when trained on historical data. Random Forest gives the most accurate results in this project.
+
+---
+
+## ⚠️ Note
+
+This project is for academic/demo purposes only. Real-world stock prediction requires larger datasets and more advanced techniques.
+
+---
+
+## 👨‍💻 Author
+
+Gopal Dixit
